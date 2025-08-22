@@ -1,2 +1,2 @@
-# Azizbek.Portfolio-website
+# Azizbek-Portfolio-website
 Axrorov Azizbekning shaxsiy portfolio sayti
