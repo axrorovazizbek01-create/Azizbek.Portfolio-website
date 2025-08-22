@@ -1,54 +1,132 @@
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azizbek Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content fade-in">
-      <h1>Salom, men <span class="highlight">Axrorov Azizbek</span>!</h1>
-      <p>Bu mening shaxsiy portfolio saytimgа xush kelibsiz 🎉</p>
-      <a href="#about" class="btn">Boshlash 🚀</a>
-    </div>
-  </section>
+/* Umumiy uslublar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
 
-  <!-- About -->
-  <section id="about" class="slide-up">
-    <h2>Men haqimda</h2>
-    <p>Men web-dasturlashga qiziqaman va yangi loyihalar yaratishni yaxshi ko‘raman. 
-    Frontend va backend bo‘yicha o‘rganishda davom etyapman.</p>
-  </section>
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(120deg, #4CAF50, #2E7D32, #1B5E20);
+  background-size: 600% 600%;
+  animation: gradientBG 12s ease infinite;
+}
 
-  <!-- Projects -->
-  <section id="projects" class="slide-up">
-    <h2>Loyihalarim</h2>
-    <div class="project-card">
-      <h3>Portfolio sayti</h3>
-      <p>Mening shaxsiy portfolio saytim — GitHub Pages’da ishlayapti 🚀</p>
-    </div>
-    <div class="project-card">
-      <h3>Boshqa loyiha</h3>
-      <p>Tez orada bu yerda yangi loyihalarimni joylayman 💻</p>
-    </div>
-  </section>
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
 
-  <!-- Contact -->
-  <section id="contact" class="slide-up">
-    <h2>Aloqa</h2>
-    <p>Email: <a href="mailto:azizbek@example.com">azizbek@example.com</a></p>
-    <p>Telegram: <a href="https://t.me/username" target="_blank">@username</a></p>
-    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
-  </section>
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
 
-  <footer>
-    <p>© 2025 Axrorov Azizbek</p>
-  </footer>
+.hero h1 {
+  font-size: 2.5rem;
+}
 
-  <script src="script.js"></script>
-</body>
-  </html> 
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #FFD700;
+  color: #333;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Animatsiyali fon */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Bo‘limlar */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Loyihalar */
+.project-card {
+  background: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Aloqa havolalari */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Animatsiyalar */
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
