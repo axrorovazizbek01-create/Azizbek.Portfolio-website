@@ -1,15 +1,110 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Axrorov Azizbek — Shaxsiy sayt</title>
-  <meta name="description" content="Axrorov Azizbekning shaxsiy sayti: portfolio, loyihalar, aloqa va ijtimoiy tarmoqlar." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axrorov Azizbek | Frontend Dasturchi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0077ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0077ff;
+    }
+    footer {
+      text-align: center;
+      background: #0077ff;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #005fcc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Salom, men Axrorov Azizbek — Frontend dasturchiman</h1>
-  <p>Mening telefon raqamim: +998 90 003 22 06</p>
-  <p>Email: axrorovazizbek01@gmail.com</p>
-  <p><a href="#">Demo</a> | <a href="#">GitHub</a></p>
+  <header>
+    <h1>Axrorov Azizbek</h1>
+    <p>Frontend Dasturchi</p>
+    <nav>
+      <a href="#about">Men haqimda</a>
+      <a href="#projects">Loyihalar</a>
+      <a href="#contact">Aloqa</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h2>Men haqimda</h2>
+      <p>Salom! Men Axrorov Azizbekman. Frontend dasturchiman va zamonaviy veb-saytlar yaratishga qiziqaman. 
+         HTML, CSS va JavaScript orqali foydalanuvchilarga qulay va chiroyli interfeyslar yarataman.</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Loyihalar</h2>
+      <ul>
+        <li>✅ Portfolio veb-sayt</li>
+        <li>✅ Demo loyihalar</li>
+        <li>✅ GitHub’dagi ochiq kodlar</li>
+      </ul>
+      <a class="btn" href="https://github.com/axrorovazizbek" target="_blank">Mening GitHub’im</a>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Aloqa</h2>
+      <p>📞 Telefon: <b>+998 99 003 22 06</b></p>
+      <p>📧 Email: <b>axrorovazizbek01@gmail.com</b></p>
+      <p>🌐 Telegram: <a href="https://t.me/username" target="_blank">@username</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Axrorov Azizbek | Frontend Dasturchi</p>
+  </footer>
 </body>
 </html>
